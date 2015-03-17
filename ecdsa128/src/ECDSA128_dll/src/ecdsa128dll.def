@@ -1,4 +1,0 @@
-LIBRARY ecdsa128
-EXPORTS ECDSA_Keygen
-	ECDSA_Sign
-	ECDSA_Verify
