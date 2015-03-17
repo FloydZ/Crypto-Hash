@@ -1,0 +1,82 @@
+[Project]
+Assembler=masm
+Type=Console App
+Description=bntest2
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+Debug=0
+[Files]
+1=bntest2.Asm
+2=
+[MakeFiles]
+0=bntest2.rap
+1=bntest2.rc
+2=bntest2.asm
+3=bntest2.obj
+4=bntest2.res
+5=bntest2.exe
+6=bntest2.def
+7=bntest2.dll
+8=bntest2.txt
+9=bntest2.lib
+10=bntest2.mak
+11=bntest2.hla
+12=bntest2.com
+[MakeDef]
+Menu=0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+1=4,OT,$B\RC.EXE /v,1
+2=3,OT,$B\jwasm.EXE /c /coff /Cp /nologo /I"$I",2
+3=5,OT,$B\LINK.EXE /nologo /SUBSYSTEM:CONSOLE /RELEASE /VERSION:4.0 /LIBPATH:"$L" kernel32.lib advapi32.lib $3
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,OT,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+7=0,0,\OllyDbg\OllyDbg,5
+11=4,O,$B\RC.EXE /v,1
+12=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+13=5,O,$B\LINK.EXE /SUBSYSTEM:CONSOLE /DEBUG /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3
+14=0,0,,5
+15=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+16=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+17=0,0,$E\OllyDbg,5
+[Resource]
+[StringTable]
+[VerInf]
+[AutoLoad]
+AutoLoad=1
+[Group]
+Group=Inc,Asm,Rsrc,Misc,Mod
+1=2
+2=
+[Colref]
+0=00FFFFFF
+1=00FFFFFF
+2=00FFFFFF
+3=00FFFFFF
+4=00FFFFFF
+5=00FFFFFF
+6=00FFFFFF
+7=00FFFFFF
+[Collapse]
+1=8
+2=
+[Size]
+1=0,0,0,0,908
+2=0,0,0,0,4
+[BookMark]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+[BreakPoint]
+0=
+[RADebugBP]
+1=
+[GroupExpand]
+GroupExpand=1,0,0,0,0,0

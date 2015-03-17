@@ -1,0 +1,8 @@
+BIGINT		STRUCT
+	dd	4 dup (?)
+BIGINT		ENDS
+
+VBIGINT	STRUCT
+	dd	8 dup (?)
+VBIGINT	ENDS
+

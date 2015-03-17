@@ -1,0 +1,44 @@
+cryptohash.inc(56) : Error A2082: Must be in segment block
+ cryptohash.inc(56): Included by
+  Crypto.asm(16): Main line code
+checksums/crc32.asm(18) : Error A2150: Missing operator in expression
+ checksums/crc32.asm(18): Included by
+  cryptohash.inc(146): Included by
+   Crypto.asm(16): Main line code
+checksums/crc32.asm(36) : Error A2209: Syntax error: endp
+ checksums/crc32.asm(36): Included by
+  cryptohash.inc(146): Included by
+   Crypto.asm(16): Main line code
+checksums/rcrc32.asm(6) : Error A2209: Syntax error: proto
+ checksums/rcrc32.asm(6): Included by
+  cryptohash.inc(147): Included by
+   Crypto.asm(16): Main line code
+checksums/rcrc32.asm(11) : Error A2159: INVOKE requires prototype for procedure
+ checksums/rcrc32.asm(11): Included by
+  cryptohash.inc(147): Included by
+   Crypto.asm(16): Main line code
+Hashes/sha0.asm(2) : Warning A4095: Multiple .MODEL directives, .MODEL ignored
+ Hashes/sha0.asm(2): Included by
+  cryptohash.inc(159): Included by
+   Crypto.asm(16): Main line code
+ciphers/rc5.asm(63) : Error A2235: Constant value too large: 15618CB1Ch
+ ciphers/rc5.asm(63): Included by
+  cryptohash.inc(177): Included by
+   Crypto.asm(16): Main line code
+ciphers/rc6.asm(60) : Error A2235: Constant value too large: 15618CB1Ch
+ ciphers/rc6.asm(60): Included by
+  cryptohash.inc(178): Included by
+   Crypto.asm(16): Main line code
+ciphers/tea.asm(68) : Error A2235: Constant value too large: 13C6EF3720h
+ ciphers/tea.asm(68): Included by
+  cryptohash.inc(180): Included by
+   Crypto.asm(16): Main line code
+ciphers/tea.asm(82) : Error A2235: Constant value too large: 13C6EF3720h
+ ciphers/tea.asm(82): Included by
+  cryptohash.inc(180): Included by
+   Crypto.asm(16): Main line code
+ciphers/xtea.asm(12) : Error A2172: Initializer magnitude too large: 
+ ciphers/xtea.asm(12): Included by
+  cryptohash.inc(182): Included by
+   Crypto.asm(16): Main line code
+Crypto.asm(50) : Error A2159: INVOKE requires prototype for procedure
