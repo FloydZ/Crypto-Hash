@@ -1,0 +1,44 @@
+.686p
+.mmx
+.model flat,stdcall
+option casemap:none
+option prologue:none
+option epilogue:none
+
+include	..\..\lib\gfp.inc
+
+public	tempInt1
+public	tempInt2
+public	tempInt3
+public	_A
+public	_B
+public	_P
+public	_PC
+public	_N
+public	_NC
+public	KEY_BASEPOINT
+
+.data
+; RandomCurve1-P128-WiteG
+; y^2 = x^3 - 3*x + 103744651967215942079424252318256895516 mod 340282366920938463444927863358058659863
+; N = 340282366920938463450938462077435853809
+
+_A		dd	000000014h, 000000000h, 0FFFFFFFFh, 0FFFFFFFFh
+_B		dd	07C72961Ch, 082522799h, 000CE59BEh, 04E0C7E41h
+_P		dd	000000017h, 000000000h, 0FFFFFFFFh, 0FFFFFFFFh
+_N		dd	093E53BF1h, 05369EFB0h, 0FFFFFFFFh, 0FFFFFFFFh
+KEY_BASEPOINT	dd	1
+		dd	0FD79309Fh, 061174BA8h, 09A2B41A1h, 0504E0BD3h
+		dd	0D469DED4h, 0BB0D8845h, 07279A790h, 09A45FA6Dh
+
+;		dd	0F1282630h, 096298968h, 01D2AF8D7h, 0DA1E8369h
+;		dd	05AD752DAh, 0C66A5335h, 0F45519DAh, 0146AE5D5h
+
+.data?
+tempInt1	BIGINT<>
+tempInt2	BIGINT<>
+tempInt3	BIGINT<>
+_PC		BIGINT<>
+_NC		BIGINT<>
+
+end

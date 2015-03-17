@@ -1,0 +1,1 @@
+getstringlen	PROTO	:DWORD
